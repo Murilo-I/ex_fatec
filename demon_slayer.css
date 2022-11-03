@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.main {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+
+#hashiras {
+    border-radius: 30px;
+    height: 150px;
+}
+
+#logo_ds {
+    height: 150px;
+}
+
+.logos {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header {
+    background-color: rgba(128, 128, 128, 0.8);
+    font-size: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.header a {
+    color: white;
+    margin-left: 2rem;
+}
+
+.header a:last-child {
+    margin-left: 10vw;
+}
+
+.content {
+    display: flex;
+    margin-bottom: 1rem;
+    position: absolute;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content img {
+    height: 700px;
+    width: 392px;
+    border-radius: 15px;
+    margin: 0 5px;
+    margin-bottom: 25px;
+    transition: all .3s;
+}
+
+.content img:hover {
+    -webkit-filter: drop-shadow(10px 7px 1px rgba(0, 0, 0, .5));
+    filter: drop-shadow(10px 7px 1px rgba(0, 0, 0, .5));
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.blue-hover, .red-hover {
+    transition: all .3s;
+}
+
+.blue-hover:hover {
+    border: solid 2px rgb(0, 183, 255);
+}
+
+.red-hover:hover {
+    border: solid 2px rgb(255, 30, 0);
+}
+
+@media (width < 1200px) {
+
+    .content img {
+        height: 500px;
+        width: 280px;
+    }
+
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .header a {
+        margin-top: 5px 0;
+        margin-bottom: 5px;
+    }
+
+    .header a:last-child {
+        margin-left: 2rem;
+    }
+}

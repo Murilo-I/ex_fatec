@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="title1"></h1>
+        <h2 id="title2"></h2>
+        <hr>
+        <label>Digite um número entre 5 e 10: </label>
+        <input id="value" type="text">
+        <input type="submit" onclick="check()">
+        <p id="message"></p>
+        <hr>
+    </div>
+
+    <script>
+        //ex01
+        alert('Hello Word!')
+        
+        //ex02
+        var nome = prompt('Digite seu Nome')
+        var res = prompt('Olá ' + nome + ', deseja continuar?')
+
+        //ex3
+        var nota = prompt('Digite sua nota final')
+        if (nota > 5)
+            alert('Aprovado')
+        else if (nota == 5)
+            alert('Recuperação')
+        else
+            alert('Reprovado')
+
+        //ex04
+        if (res) {
+            var anoAtual = prompt('Digite o ano atual')
+            var anoNasc = prompt('Digite seu ano de nascimento')
+            alert(`Sua idade é ${anoAtual - anoNasc} anos`)
+        }
+
+        //ex05
+        var dia = parseInt(prompt('Digite um número de 1 a 7'))
+        switch (dia) {
+            case 1:
+                alert('Domingo')
+                break;     
+            case 2:
+                alert('Segunda-Feira')
+                break;     
+            case 3:
+                alert('Terça-Feira')
+                break;     
+            case 4:
+                alert('Quarta-Feira')
+                break;     
+            case 5:
+                alert('Quinta-Feira')
+                break;     
+            case 6:
+                alert('Sexta-Feira')
+                break;     
+            case 7:
+                alert('Sábado')
+                break;
+            default:
+                alert('Número inválido')
+                break;
+        }
+
+        //ex07
+        var valor = parseInt(prompt('Digite um número'))
+        if (valor % 2 == 0)
+            alert(`O valor ${valor} é par`)
+        else
+            alert(`O valor ${valor} é ímpar`)
+
+        //ex08
+        valor % 2 == 1 ? alert(`O valor ${valor} é ímpar`) : alert(`O valor ${valor} é par`)
+
+        //ex09
+        for (let i = 0; i <= 10; i++)
+            alert(i)
+
+        //ex10
+        while (valor > 0) {
+            alert(valor)
+            valor--
+        }
+
+        //ex12
+        var valor = parseInt(prompt('Digite um número'))
+        var i = 0
+        do {
+            if (i % 3 === 0)
+                alert(i)
+            i++
+        } while (i <= valor)
+
+        //ex13
+        function bar() {
+            alert('Hello Word!')
+        }
+
+        function soma() {
+            var v1 = parseInt(prompt('Digite um número'))
+            var v2 = parseInt(prompt('Digite outro número'))
+            alert(`a soma entre ${v1} e ${v2} é ${soma2(v1, v2)}`)
+        }
+
+        function soma2 (x, y) {
+            return x + y
+        }
+
+        bar()
+        soma()
+
+        //ex14
+        document.querySelector('#title1').innerHTML = 'Professor Snape'
+        document.querySelector('#title2').innerHTML = 'F1!'
+
+        //ex15
+        function check() {
+            const message = document.querySelector('#message');
+            message.innerHTML = "";
+            let x = document.querySelector('#value').value
+
+            try {
+                if (x == '') throw 'input vazio'
+                else if (isNaN(x)) throw 'não é um número'
+                else if (x > 10) throw 'valor maior que 10'
+                else if (x < 5) throw 'valor menor que 5'
+                else message.innerHTML = x
+            } catch (err) {
+                message.innerHTML = err
+            }
+        }
+
+        //ex16
+
+        //ex17
+
+        //ex18
+
+        //ex19
+
+        //ex20
+
+        //ex21
+
+        //ex22
+
+        //ex23
+
+        //ex24
+
+        //ex25
+
+        //ex26
+
+        //ex27
+
+        //ex28
+
+    </script>
+</body>
+</html>
