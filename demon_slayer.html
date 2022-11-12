@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselScenes" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <video width="100%" src="media/tanjiro vs rui.mp4" loop autoplay muted></video>
@@ -21,23 +21,112 @@
                 <video width="100%" src="media/uzui vs gyutaro.webm" loop autoplay muted></video>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselScenes" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselScenes" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <nav class="header">
+
+    <nav id="main-nav" class="header">
         <a href="#">Home</a>
         <a href="https://www.google.com/search?q=demons+slayer+wallpaper+cell+phone&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj26fzBhob7AhXTA9QKHXpdDtQQ_AUoAXoECAEQAw">Biblioteca</a>
-        <a href="https://www.google.com/search?q=demons+slayer+action+figures&tbm=isch&ved=2ahUKEwjcnr_Khob7AhVXN7kGHRVBAxQQ2-cCegQIABAA&oq=demons+slayer+action+figures&gs_lcp=CgNpbWcQAzoFCAAQgAQ6BAgAEB46BggAEAgQHlDQB1jwIGCWImgBcAB4AIABX4gB7QmSAQIxNJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=oG5dY9zOO9fu5OUPlYKNoAE">Action Figures</a>
         <a href="https://animesonline.cc/temporada/kimetsu-no-yaiba-1-temporada-online/">Temporada 1</a>
         <a href="https://animesonline.cc/temporada/kimetsu-no-yaiba-2-temporada-online/">Temporada 2</a>
+        <a href="https://www.google.com/search?q=demons+slayer+action+figures&tbm=isch&ved=2ahUKEwjcnr_Khob7AhVXN7kGHRVBAxQQ2-cCegQIABAA&oq=demons+slayer+action+figures&gs_lcp=CgNpbWcQAzoFCAAQgAQ6BAgAEB46BggAEAgQHlDQB1jwIGCWImgBcAB4AIABX4gB7QmSAQIxNJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=oG5dY9zOO9fu5OUPlYKNoAE">Action Figures</a>
         <a href="login.html">Área exclusiva</a>
     </nav>
+
+    <div id="carouselMenu" class="carousel slide header" data-interval="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="center">
+                    <a href="#">Home</a>
+                    <a href="https://www.google.com/search?q=demons+slayer+wallpaper+cell+phone&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj26fzBhob7AhXTA9QKHXpdDtQQ_AUoAXoECAEQAw">Biblioteca</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="center">
+                    <a href="https://animesonline.cc/temporada/kimetsu-no-yaiba-1-temporada-online/">Temporada 1</a>
+                    <a href="https://animesonline.cc/temporada/kimetsu-no-yaiba-2-temporada-online/">Temporada 2</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="center">
+                    <a href="https://www.google.com/search?q=demons+slayer+action+figures&tbm=isch&ved=2ahUKEwjcnr_Khob7AhVXN7kGHRVBAxQQ2-cCegQIABAA&oq=demons+slayer+action+figures&gs_lcp=CgNpbWcQAzoFCAAQgAQ6BAgAEB46BggAEAgQHlDQB1jwIGCWImgBcAB4AIABX4gB7QmSAQIxNJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=oG5dY9zOO9fu5OUPlYKNoAE">Action Figures</a>
+                    <a href="login.html">Área exclusiva</a>    
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMenu" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMenu" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div id="carouselMenu2" class="carousel slide header" data-interval="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselMenu2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselMenu2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselMenu2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselMenu2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselMenu2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselMenu2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="center">
+                    <a href="#">Home</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="center">
+                    <a href="https://www.google.com/search?q=demons+slayer+wallpaper+cell+phone&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj26fzBhob7AhXTA9QKHXpdDtQQ_AUoAXoECAEQAw">Biblioteca</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="center">
+                    <a href="https://animesonline.cc/temporada/kimetsu-no-yaiba-1-temporada-online/">Temporada 1</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="center">
+                    <a href="https://animesonline.cc/temporada/kimetsu-no-yaiba-2-temporada-online/">Temporada 2</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="center">
+                    <a href="https://www.google.com/search?q=demons+slayer+action+figures&tbm=isch&ved=2ahUKEwjcnr_Khob7AhVXN7kGHRVBAxQQ2-cCegQIABAA&oq=demons+slayer+action+figures&gs_lcp=CgNpbWcQAzoFCAAQgAQ6BAgAEB46BggAEAgQHlDQB1jwIGCWImgBcAB4AIABX4gB7QmSAQIxNJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=oG5dY9zOO9fu5OUPlYKNoAE">Action Figures</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="center">
+                    <a href="login.html">Área exclusiva</a>    
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMenu2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMenu2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+        
     <main class="main">
         <div class="content">
             <img class="blue-hover" src="images/capa.jpg" alt="">

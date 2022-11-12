@@ -44,6 +44,12 @@ body {
     margin-left: 10vw;
 }
 
+.center {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
 .content {
     display: flex;
     margin-bottom: 1rem;
@@ -81,6 +87,13 @@ body {
     border: solid 2px rgb(255, 30, 0);
 }
 
+#carouselMenu, #carouselMenu2 {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    display: none;
+}
+
 @media (width < 1200px) {
 
     .content img {
@@ -100,5 +113,37 @@ body {
 
     .header a:last-child {
         margin-left: 15px;
+    }
+}
+
+@media (width < 750px) {
+    #main-nav {
+        display: none;
+    }
+
+    #carouselMenu {
+        display: flex;
+    }
+
+    #carouselMenu .carousel-item {
+        margin-right: 0;
+    }
+
+    .header a {
+        margin: 0;
+    }
+
+    .header a:last-child {
+        margin-left: 0;
+    }
+}
+
+@media (width < 500px) {
+    #carouselMenu {
+        display: none;
+    }
+
+    #carouselMenu2 {
+        display: flex;
     }
 }
