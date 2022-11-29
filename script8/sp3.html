@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Selecione os produtos</h3>
+    <select id="op1">
+      <option selected="selected">Leite</option>
+      <option>Farinha</option>
+      <option>Ovo</option>
+    </select>
+    <select id="op2">
+      <option>Leite</option>
+      <option selected="selected">Farinha</option>
+      <option>Ovo</option>
+    </select>
+    <select id="op3">
+      <option>Leite</option>
+      <option>Farinha</option>
+      <option selected="selected">Ovo</option>
+    </select>
+    <h3>Selecione a quantidade</h3>
+    <input id="op1quant" type="number" style="width: 62px" />
+    <input id="op2quant" type="number" style="width: 62px" />
+    <input id="op3quant" type="number" style="width: 62px" />
+    <br />
+    <input
+      type="button"
+      value="Calcular total"
+      style="margin-top: 20px"
+      onclick="calcularTotal()"
+    />
+    <p id="total"></p>
+    <script src="script8.js"></script>
+</body>
+</html>
